@@ -1,7 +1,7 @@
 .navbar {
   background-color: rgba(255, 255, 255, 0); /* Transparencia */
   padding: 10px;
-  padding-top: 30px;
+  padding-top: 25px;
 
   top: 0;
   width: 90%;
@@ -14,7 +14,7 @@
 .brand {
   font-size: 1.5em;
   font-weight: bold;
-  margin-left: 35px;
+  margin-left: 2rem;
   color: #0a0a0a;
   display: flex;
   flex-direction: column;
@@ -22,17 +22,17 @@
 }
 
 .brand-top {
-  font-size: 0.8em;
+  font-size: 1.5rem;
   margin-left: 30px;
 }
 
 .brand-bottom {
-  font-size: 1.2em;
+  font-size: 2rem;
 }
 
 .menu-icon {
   display: none;
-  font-size: 2em;
+  font-size: 2rem;
   cursor: pointer;
 }
 
@@ -42,6 +42,8 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .navbar-list li {
@@ -62,7 +64,7 @@
 
 @media (max-width: 768px) {
   .menu-icon {
-    display: block;
+    visibility: hiddens;
   }
 
   .navbar-list {
@@ -72,7 +74,7 @@
   }
 
   .navbar-list-mobile {
-    display: flex;
+    visibility: hiddens;
   }
 
   .navbar-list li {

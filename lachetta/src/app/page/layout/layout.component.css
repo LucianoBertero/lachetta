@@ -20,16 +20,20 @@
   max-width: 500px; /* Ajusta este valor según sea necesario */
   margin: 0 auto; /* Centra el contenido horizontalmente */
   text-align: center; /* Centra el texto */
-  font-size: 1em;
+  font-size: 1.1rem;
   padding: 10px;
+  font-weight: bold;
 }
 
 .subtitle {
   margin-top: 2rem;
-  font-size: 1.2em;
+  font-size: 1.4rem;
   font-weight: bold;
   color: #0a0a0a;
-  margin-left: 9rem;
+  margin-left: 10%;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  display: inline-block;
 }
 
 .banner {
@@ -76,6 +80,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../assets/abstract-textured-backdrop-background.jpg");
 }
 
 /* Contenedor de cada imagen */
@@ -84,11 +90,15 @@
   display: inline-block;
 }
 
+.container-where .image-container:nth-child(1) {
+  padding-top: 20px;
+}
 /* Imagenes */
 .image-container img {
   display: block;
   width: 100%;
   height: auto;
+  max-width: 1000px;
 }
 
 /* Overlay para las descripciones */
@@ -106,6 +116,10 @@
 
 .contact {
   margin-top: -2rem;
+}
+
+.contact-info {
+  margin-top: 10rem;
 }
 
 @media screen and (max-width: 768px) {
