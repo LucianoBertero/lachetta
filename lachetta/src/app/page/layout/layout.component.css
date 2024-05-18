@@ -1,0 +1,120 @@
+.cuerpo {
+  padding: 0;
+  margin: 0;
+  background-image: url("./../../../assets/fondo-pizza.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 30rem;
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.brand-description {
+  max-width: 500px; /* Ajusta este valor según sea necesario */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  text-align: center; /* Centra el texto */
+  font-size: 1em;
+  padding: 10px;
+}
+
+.subtitle {
+  margin-top: 2rem;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #0a0a0a;
+  margin-left: 9rem;
+}
+
+.banner {
+  background-image: url("./../../../assets/banner.png"); /* Añade la imagen de fondo del banner */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+  position: absolute; /* Utiliza posición absoluta para superponer el banner */
+  /* Ajusta según sea necesario para posicionar el banner en la parte inferior */
+
+  width: 100%;
+
+  z-index: 100000;
+}
+
+.banner .title {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.container-cards {
+  padding-top: 4.5rem;
+  height: auto;
+  background-color: #aaa0a7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+.cards {
+  margin-top: 30px;
+}
+
+.where {
+  margin-top: -3.5rem;
+}
+
+.container-where {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Contenedor de cada imagen */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Imagenes */
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Overlay para las descripciones */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 1em;
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+.contact {
+  margin-top: -2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .cuerpo {
+    height: 20rem;
+  }
+
+  .banner .title {
+    font-size: 2em;
+    font-weight: bold;
+  }
+}

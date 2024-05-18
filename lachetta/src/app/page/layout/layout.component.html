@@ -1,0 +1,42 @@
+<div class="cuerpo">
+  <app-navbar></app-navbar>
+  <div class="subtitle">Quienes Somos???</div>
+  <div class="brand">
+    <div class="brand-description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsam
+      quam saepe ea quibusdam odio eum earum dolorum! Pariatur rem quod alias,
+      laboriosam nostrum omnis dolorem aliquam aliquid maxime velit?
+    </div>
+  </div>
+</div>
+<div class="products">
+  <div class="banner where">
+    <span class="title">Productos</span>
+  </div>
+
+  <div class="container-cards">
+    <div></div>
+    @for (pizza of pizzas; track pizza.id) {
+    <app-card-pizza [pizza]="pizza"></app-card-pizza>
+    }
+  </div>
+</div>
+
+<div class="banner where">
+  <span class="title">Donde encontrarnos??</span>
+</div>
+
+<div class="container-where">
+  <div class="image-container">
+    <img src="../../../assets/carrochetta.png" alt="Carro Chetta" />
+    <div class="overlay">Entrada Boliche Guemes</div>
+  </div>
+  <div class="image-container">
+    <img src="../../../assets/localPizza.png" alt="Local Pizza" />
+    <div class="overlay">La rancherita 300</div>
+  </div>
+</div>
+
+<div class="banner contact">
+  <span class="title">Contacto</span>
+</div>
